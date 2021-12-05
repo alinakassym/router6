@@ -11,7 +11,7 @@ const Layout = () => {
       <header>
         <CustomLink to="/" style={setActive}>Home</CustomLink>
         <CustomLink to="/about" style={setActive}>About</CustomLink>
-        <CustomLink to="/blog" style={setActive}>Blog</CustomLink>
+        <CustomLink to="/posts" style={setActive}>Blog</CustomLink>
       </header>
 
       <main className="container">

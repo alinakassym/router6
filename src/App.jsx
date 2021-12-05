@@ -5,6 +5,7 @@ import { About } from "./pages/AboutPage";
 import { Blog } from "./pages/BlogPage";
 import { Home } from "./pages/HomePage";
 import { NotFound } from "./pages/NotFoundPage";
+import { Post } from "./pages/PostPage";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="blog" element={<Blog />} />
+        <Route path="posts" element={<Blog />} />
+        <Route path="posts/:id" element={<Post />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
