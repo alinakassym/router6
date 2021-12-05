@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-const Post = () => {
+const EditPost = () => {
   const { id } = useParams();
   const [post, setPost] = useState(null);
 
@@ -12,15 +12,13 @@ const Post = () => {
   }, [id])
   return (
     <section>
+      <h1>Edit post {id}</h1>
       {post && (
-        <>
-          <h1>{post.title}</h1><p>{post.body}</p>
-          <Link to={`/posts/${id}/edit`}>Edit this post</Link>
-        </>
+        <><h2>{post.title}</h2><p>{post.body}</p></>
       )}
 
     </section>
   )
 }
 
-export { Post }
+export { EditPost }
