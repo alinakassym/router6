@@ -1,8 +1,8 @@
 const NotFound = () => {
     return (
-        <div>
+        <section>
             This page doesn't exist. Go <a href="/">home</a>
-        </div>
+        </section>
     )
 }
 

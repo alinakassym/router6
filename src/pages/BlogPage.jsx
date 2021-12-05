@@ -1,9 +1,9 @@
 const Blog = () => {
     return (
-        <div>
+        <section>
             <h1>Blog</h1>
             <p>This is demo website about React-router-dom library</p>
-        </div>
+        </section>
     )
 }
 
