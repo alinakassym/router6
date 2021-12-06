@@ -12,6 +12,7 @@ const Blog = () => {
     return (
         <section>
             <h1>Blog</h1>
+            <Link to="/posts/new">Add new posts</Link>
             <p>This is demo website about React-router-dom library</p>
             <ul>
                 {posts.map(post => (
