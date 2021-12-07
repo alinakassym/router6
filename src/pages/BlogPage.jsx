@@ -19,7 +19,7 @@ const Blog = () => {
   }, [])
   return (
     <section>
-      <h1>Blog {JSON.stringify(latest)}</h1>
+      <h1>Blog</h1>
 
       <BlogFilter postQuery={postQuery} latest={latest} setSearchParams={setSearchParams} />
 

@@ -25,8 +25,8 @@ const BlogFilter = ({ postQuery, latest, setSearchParams }) => {
       <input type="submit" value="Search" />
 
       <label style={{ marginLeft: "20px", display: "flex", alignItems: "center" }}>
-        Latest:
-        <input type="checkbox" name="latest" value={checked} onChange={e => setChecked(e.target.checked)} style={{ marginBottom: 2, marginLeft: 8 }} />
+        New only:
+        <input type="checkbox" name="latest" checked={checked} onChange={e => setChecked(e.target.checked)} style={{ marginBottom: 2, marginLeft: 8 }} />
       </label>
     </form>
   )
